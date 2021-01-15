@@ -1,0 +1,34 @@
+- In any sufficiently advanced web app, the user interface has to be stateful
+- logged-in users see a different screen than logged out users
+- clicked 'edit-profile' opens up a modal window
+- sections of a website can expand or collapse
+- State is designed to change in response to events
+- What does state track?
+    - UI Logic: changing the state of the interface
+    - Business logic: the changing state of data (ie. messages that are read/unread)
+    - Before state, people would change state by selecting DOM elements
+
+Core React Concept Review
+    - Component
+        - building block of React
+        - combines logic (js) with presentation (jsx)
+    - Prop
+        - data passed to a component 
+        - immutable; component cannot change its own props
+    - State
+        - internal data specific to a component
+
+What is React State?
+    - State is an instance attribute on a component
+    - It's always an object (POJO), since you'll want to keep track of several
+      keys/values
+
+Initial State
+    - State should be initialized as soon as the component is created
+    - Set it in the constructor function
+        constructor(props) {
+            super(props);
+            this.state = {
+                /* values to track */
+            }
+        }
