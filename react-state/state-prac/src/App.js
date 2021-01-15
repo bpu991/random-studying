@@ -4,11 +4,13 @@ import Demo from './Demo';
 import Game from './Game';
 import Rando from './Rando';
 import Click from './Click'
+import RollDice from './RollDice';
+
 function App() {
   return (
     <div className="App">
       {/* <Rando maxNum={1000}/> */}
-      <Click />
+      <RollDice />
 
     </div>
   );
