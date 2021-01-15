@@ -6,18 +6,13 @@ class Game extends Component {
         this.state = {
             score: 0,
             gameOver: false
-        }
+        };
     }
-    handleUpvote = () => {
-        this.setState({
-            score
-        })
-    }
+    
     render() {
         return (
             <div>
-                <h1>Your score is {this.state.score} </h1>
-                <button onClick={this.handleUpvote} />
+                <h1>Your score is: {this.state.score} </h1>
             </div>
         )
     }

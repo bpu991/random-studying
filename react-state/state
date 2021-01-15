@@ -32,3 +32,10 @@ Initial State
                 /* values to track */
             }
         }
+
+Changing State
+    - this.setState() is the built in React method of changing component's state
+    - Can call in any instance method except constructor
+    - Takes an object describing the state changes
+    - Patches state object - keys that you didn't specify dont change
+    - Asynchronous
