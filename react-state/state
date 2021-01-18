@@ -44,5 +44,11 @@ Updating State (scoreboard, number counter, etc)
     - setState Callback Form -> this.setState(callback)
         - instead of passing an object, pass it a callback with the current state
           as a parameter
-        - Calback should return an object representing the new state
+        - Callback should return an object representing the new state
         - this.setState(currentState => ({ count: curState.count + 1 }));
+
+Minimizing State
+    - You want to try to put as little data in state as possible
+        - Does x change? if not, x does not need to be part of state
+    - State should live on the parent component and that parent component should
+      have a bunch of 'dumb' stateless comps that just display the data

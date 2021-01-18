@@ -6,13 +6,14 @@ import Rando from './Rando';
 import Click from './Click'
 import RollDice from './RollDice';
 import ScoreKeeper from './ScoreKeeper';
+import Lotto from './Lotto';
 
 function App() {
   return (
     <div className="App">
       <RollDice />
       <ScoreKeeper />
-
+      <Lotto />
     </div>
   );
 }
