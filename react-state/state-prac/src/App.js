@@ -5,12 +5,13 @@ import Game from './Game';
 import Rando from './Rando';
 import Click from './Click'
 import RollDice from './RollDice';
+import ScoreKeeper from './ScoreKeeper';
 
 function App() {
   return (
     <div className="App">
-      {/* <Rando maxNum={1000}/> */}
       <RollDice />
+      <ScoreKeeper />
 
     </div>
   );

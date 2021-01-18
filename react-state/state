@@ -39,3 +39,10 @@ Changing State
     - Takes an object describing the state changes
     - Patches state object - keys that you didn't specify dont change
     - Asynchronous
+
+Updating State (scoreboard, number counter, etc)
+    - setState Callback Form -> this.setState(callback)
+        - instead of passing an object, pass it a callback with the current state
+          as a parameter
+        - Calback should return an object representing the new state
+        - this.setState(currentState => ({ count: curState.count + 1 }));
