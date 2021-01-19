@@ -52,3 +52,17 @@ Minimizing State
         - Does x change? if not, x does not need to be part of state
     - State should live on the parent component and that parent component should
       have a bunch of 'dumb' stateless comps that just display the data
+
+React events
+    - Mouse events: onClick, onMouseOver
+    - Form events: onSubmit
+    - keyboard events: onKeyDown, onKeyUp, onKeyPress
+    - Inline binding of 'this': 
+        onMouseEnter={this.dispenseMessage.bind(this)}
+        cons: not good for being efficient
+    - Arrow function binding of 'this':
+        onMouseEnter={() => this.dispenseMessage()}
+    - Bind in the constructor
+
+Method Binding with Arguments
+    

@@ -7,6 +7,7 @@ import Click from './Click'
 import RollDice from './RollDice';
 import ScoreKeeper from './ScoreKeeper';
 import Lotto from './Lotto';
+import WiseSquareWithProps from './WiseSquareWithProps';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <RollDice />
       <ScoreKeeper />
       <Lotto />
+      <WiseSquareWithProps />
     </div>
   );
 }
