@@ -8,6 +8,8 @@ import RollDice from './RollDice';
 import ScoreKeeper from './ScoreKeeper';
 import Lotto from './Lotto';
 import WiseSquareWithProps from './WiseSquareWithProps';
+import ButtonList from './ButtonList';
+import NumberList from './NumberList';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <ScoreKeeper />
       <Lotto />
       <WiseSquareWithProps />
+      <ButtonList />
+      <NumberList />
     </div>
   );
 }
